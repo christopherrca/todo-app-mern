@@ -11,7 +11,7 @@ import express from "express"
 const router = express.Router()
 
 
-import { getAllData } from "../controllers/crudController.js"
+import {getAllData, createData,getOneItem, updateData, deleteData } from "../controllers/crudController.js"
 
 
 router.route("/").get(getAllData)
